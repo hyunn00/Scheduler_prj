@@ -18,15 +18,10 @@
     </li>
     <li><a href="#구현-페이지">구현 페이지</a>
       <ul>
-        <li><a href="#signup">회원가입</a></li>
-        <li><a href="#login">로그인</a></li>
+        <li><a href="#signup">회원가입 및 로그인</a></li>
+        <li><a href="#admin">관리자 로그인 및 사용자 관리</a></li>
         <li><a href="#findpw">비밀번호 찾기</a></li>
-        <li><a href="#create">일정 등록</a></li>
-        <li><a href="#update">알정 수정</a></li>
-        <li><a href="#delete">일정 삭제</a></li>
-        <li><a href="#add">관리자 등록</a></li>
-        <li><a href="#modify">사용자 정보 수정</a></li>
-        <li><a href="#del">사용자 삭제</a></li>
+        <li><a href="#scheduler">일정 관리</a></li>
       </ul>
     </li>
   </ol>
@@ -94,28 +89,51 @@
 # 구현 페이지
 
 
-<h3 id="signup">회원가입</h3>
+<h3 id="signup">회원가입 및 로그인</h3>
 
-<h3 id="login">로그인</h3>
+https://github.com/hyunn00/Scheduler_prj/assets/90684987/f9a349b5-6814-477a-8b17-fc74f31e36b8
 
-**관리자 로그인**
+**구현 기능**
 
-**사용자 로그인**
+    * 기존에 등록되어 있지 않은 아이디로 로그인 시 'There are no members. Please sign up first.' 메시지 출력
+    * sign up 버튼을 통해 회원가입 화면으로 전환
+    * 아이디, 비밀번호, 비밀번호 확인, 이름, 전화번호 기입
+    * 비밀번호와 비밀번호 확인 칸에 입력된 값이 일치하지 않으면 'Password does not match.' 메시지 출력
+    * 회원가입한 아이디로 회원가입 성공시 'Welcome Scheduler.' 메시지 출력 및 일정 관리 화면으로 전환
+
+<h3 id="admin">관리자 로그인 및 사용자 관리</h3>
+
+https://github.com/hyunn00/Scheduler_prj/assets/90684987/56931129-df5c-4543-80dd-11c1cfb642f9
+
+**구현 기능**
+
+    * 등록된 관리자 이이디로 로그인 시 'Admin Account. Welcome Scheduler.' 메시지 출력
+    * 사용자 목록 표와 관리자 목록 표로 사용자를 분리하여 관리
+    * 사용자 목록 중 수정하고자 하는 요소를 선택하여 수정 및 삭제 가능
+    * 관리자를 신규 등록 및 등록된 관리자 정보 수정 가능
 
 <h3 id="findpw">비밀번호 찾기</h3>
 
-<h3 id="create">일정 등록</h3>
+https://github.com/hyunn00/Scheduler_prj/assets/90684987/82b6d7e4-4e81-4dc1-ad1d-dba2ec9817ce
 
-<h3 id="update">일정 수정</h3>
+**구현 기능**
 
-<h3 id="delete">일정 삭제</h3>
+    * find pw 버튼을 통해 비밀번호 찾기 화면으로 전환
+    * 아이디, 이름, 전화번호를 입력하여 정보가 일치하면 비밀번호 출력
+    * 빈칸이 있거나 db 정보와 일치하지 않는 값을 입력하면 사용자를 찾는데 실패했다는 메시지 출력
+    * 비밀번호 찾기로 찾은 비밀번호로 로그인 시 일정 관리 화면으로 전환
 
-<h3 id="add">관리자 등록</h3>
+<h3 id="scheduler">일정 관리</h3>
 
-<h3 id="modify">사용자 정보 수정</h3>
+https://github.com/hyunn00/Scheduler_prj/assets/90684987/1300a2d0-c6b4-485e-8946-b75666f02339
 
-<h3 id="del">사용자 삭제</h3>
+**구현 기능**
 
+    * 사용자 아이디로 로그인 시 일정 관리 화면으로 전환
+    * 확인하고자 하는 날짜를 달력에서 선택
+    * 선택된 날짜에 등록된 일정이 있으면 수정, 삭제 가능
+    * 등록된 일정이 없다면 신규 일정을 등록 가능
+    
 ---
 
 <p align = "center">
